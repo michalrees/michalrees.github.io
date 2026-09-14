@@ -1,2 +1,6 @@
+# pnpm 10+ 默认拦截依赖的构建脚本，hexo-util 需要跑 postinstall 生成高亮别名。
+# 两种写法都写上，兼容不同 pnpm 版本。
 allowBuilds:
   hexo-util: true
+onlyBuiltDependencies:
+  - hexo-util
