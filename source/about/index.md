@@ -5,7 +5,7 @@ type: about
 comments: false
 ---
 
-你好，我是 **YUHAO**。
+你好，我是 **HaoranYu**。
 
 这里是我的个人博客，用来记录学习笔记、科研日常和各种折腾过程。
 
