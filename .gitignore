@@ -6,3 +6,9 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 本地存档：不纳入版本控制
+# 对话记录（由会话日志导出）
+对话记录/
+# 会话导出/检查用的临时脚本
+_tools/
