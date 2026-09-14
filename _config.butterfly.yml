@@ -1036,6 +1036,10 @@ inject:
     # 整段必须用引号包住：CSS 里含 "#"，而 YAML 中 "#"（前有空格）会被当作注释起始，
     # 不加引号会导致 "#" 之后的 CSS 被整段丢弃。
     - '<style>#site-info #site-title{font-size:0}#site-info #site-title::before{content:"个人生活记录官的工作经历";font-size:2.4rem;font-weight:700;letter-spacing:.02em;background:linear-gradient(90deg,#f5a3c7,#8fd8f0);-webkit-background-clip:text;background-clip:text;color:transparent}@media(max-width:768px){#site-info #site-title::before{font-size:1.6rem}}</style>'
+    # 主题把正文图片样式设成 display:block + margin:0 auto（为独立大图居中所设），
+    # 这会让行内小图标也被居中、跑到列表项右侧。这里显式改回行内块并清掉 auto 边距。
+    # 注入的 style 在外部样式表之后，同优先级下后者生效，因此无需 !important。
+    - '<style>.resume-icon{display:inline-block !important;height:1.4em;width:auto;margin:0 .4em 0 0 !important;vertical-align:-.28em}.resume-icon-round{width:1.4em;object-fit:cover;border-radius:50%}</style>'
   bottom:
     # - <script src="xxxx"></script>
 
