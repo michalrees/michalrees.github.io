@@ -1039,7 +1039,7 @@ inject:
     # 主题把正文图片样式设成 display:block + margin:0 auto（为独立大图居中所设），
     # 这会让行内小图标也被居中、跑到列表项右侧。这里显式改回行内块并清掉 auto 边距。
     # 注入的 style 在外部样式表之后，同优先级下后者生效，因此无需 !important。
-    - '<style>.resume-icon{display:inline-block !important;height:1.4em;width:auto;margin:0 .4em 0 0 !important;vertical-align:-.28em}.resume-icon-round{width:1.4em;object-fit:cover;border-radius:50%}</style>'
+    - '<style>.post-content .resume-icon{display:inline-block !important;height:1.4em !important;width:auto !important;max-width:none !important;margin:0 .4em 0 0 !important;vertical-align:-.28em}.post-content img.resume-icon-round{width:1.4em !important;object-fit:cover;border-radius:50%}</style>'
   bottom:
     # - <script src="xxxx"></script>
 
