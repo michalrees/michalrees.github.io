@@ -98,6 +98,13 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
+# Sitemap（由 hexo-generator-sitemap 生成，供搜索引擎收录）
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: false
+  categories: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
