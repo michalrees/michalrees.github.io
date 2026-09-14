@@ -102,6 +102,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:michalrees/michalrees.github.io.git
-  branch: main
+  # main 分支放 Hexo 源码；GitHub Pages 发布的是 gh-pages 分支里生成好的静态文件
+  repo: https://github.com/michalrees/michalrees.github.io.git
+  branch: gh-pages
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"

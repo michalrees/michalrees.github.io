@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo generate && node -e \"require('node:fs').copyFileSync('source/.nojekyll','public/.nojekyll')\"",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
+    "deploy": "hexo generate && node -e \"require('node:fs').copyFileSync('source/.nojekyll','public/.nojekyll')\" && hexo deploy",
     "server": "hexo server"
   },
   "hexo": {
