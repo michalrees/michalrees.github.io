@@ -44,9 +44,6 @@ importers:
       hexo-theme-butterfly:
         specifier: ^5.7.0
         version: 5.7.0
-      hexo-theme-landscape:
-        specifier: ^1.0.0
-        version: 1.1.0
     devDependencies:
       hexo-cli:
         specifier: ^4.3.2
@@ -530,9 +527,6 @@ packages:
 
   hexo-theme-butterfly@5.7.0:
     resolution: {integrity: sha512-MDPlFHbgXRS7OmFYOZfFmA9ehFIkXN6Us1VjCaMI1MDgmJ+IKyMEQeAJBiH6rTUd0gt+d09+ppx87ZMx0S0iUw==}
-
-  hexo-theme-landscape@1.1.0:
-    resolution: {integrity: sha512-nszjixBEiEDZjf7glAGbHg0nKGHZdUDwzFVVdRDeu4FeHfGcY5CZNl9sF4vSligjnD8IwFXpDfx5E+GRmNKvWg==}
 
   hexo-util@2.7.0:
     resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
@@ -1624,8 +1618,6 @@ snapshots:
       moment-timezone: 0.6.3
     transitivePeerDependencies:
       - supports-color
-
-  hexo-theme-landscape@1.1.0: {}
 
   hexo-util@2.7.0:
     dependencies:
