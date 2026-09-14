@@ -141,8 +141,7 @@ subtitle:
   typed_option: shuffle
   source: false
   sub:
-    - 记录学习与折腾
-    - 慢慢来，比较快
+    - 功不唐捐，玉汝于成
 index_layout: 3
 
 # Display the article introduction on homepage
@@ -1029,7 +1028,14 @@ inject:
     # Butterfly 不会输出标准的 keywords meta（它只把 keywords 塞进 og:article:tag），
     # 所以这里手动补一个，主要照顾百度/必应这类仍参考 keywords 的引擎。
     - <meta name="keywords" content="余浩然,HaoranYu,博客,技术笔记,气候数据分析,ETCCDI,BCSD,klimapy">
-    # - <link rel="stylesheet" href="/xxx.css">
+    # 首页中间的大标题与导航栏标题都取自 config.title，配置项无法拆成两个值。
+    # #site-info 只在首页渲染，所以在这里单独替换首页大标题的文字，
+    # 导航栏（a.nav-site-title）不受影响。
+    # 注意：#site-title 设为 font-size:0 隐藏原文字，但 font-size 会被 ::before 继承，
+    # 所以必须在 ::before 上重新声明字号，否则替换后的文字也不可见。
+    # 整段必须用引号包住：CSS 里含 "#"，而 YAML 中 "#"（前有空格）会被当作注释起始，
+    # 不加引号会导致 "#" 之后的 CSS 被整段丢弃。
+    - '<style>#site-info #site-title{font-size:0}#site-info #site-title::before{content:"个人生活记录官的工作经历";font-size:2.4rem;font-weight:700;letter-spacing:.02em;background:linear-gradient(90deg,#f5a3c7,#8fd8f0);-webkit-background-clip:text;background-clip:text;color:transparent}@media(max-width:768px){#site-info #site-title::before{font-size:1.6rem}}</style>'
   bottom:
     # - <script src="xxxx"></script>
 
