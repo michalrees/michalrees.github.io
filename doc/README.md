@@ -27,7 +27,7 @@
 ## 写一篇新文章
 
 ```powershell
-cd E:\Haoran\Blog
+cd E:\Michal\Repos\Blog
 Copy-Item "doc\_模板.md" "doc\我的新文章.md"
 ```
 
@@ -36,7 +36,7 @@ Copy-Item "doc\_模板.md" "doc\我的新文章.md"
 ## 发布：同步 + 推送
 
 ```powershell
-cd E:\Haoran\Blog
+cd E:\Michal\Repos\Blog
 
 # 1. 同步原稿到发布目录
 .\doc\publish-doc.ps1
