@@ -80,7 +80,8 @@ footer_img: false
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
-background: /img/wallpaper.jpg
+# 纯色背景：注意值里的 # 必须用引号包住，否则 # 之后会被 YAML 当注释丢弃
+background: '#f6f8fa'
 
 cover:
   # Disable the cover or not
